@@ -1,0 +1,11 @@
+{
+  "name": "node-file-handler",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "repository": "https://github.com/obinnafranklinduru/node-file-handler",
+  "author": "Obinna Franklin Duru",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/app.js"
+  }
+}
