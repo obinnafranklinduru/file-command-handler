@@ -19,7 +19,6 @@ The file command handler utilizes the `fs/promises` module, which is a built-in 
 ## Commands
 
 The file-command-handler supports the following commands:
-Note that the path must be the absolute path, which is the exact location of a file or directory in a file system. Examples: - Unix-based systems: `/home/user/documents/file.txt` - Windows systems: `C:\Users\User\Documents\file.txt`
 
 - **Create a file:** To create a file, use the command `create a file <path>`. Replace `<path>` with the desired file absolute path.
 
@@ -28,6 +27,12 @@ Note that the path must be the absolute path, which is the exact location of a f
 - **Rename a file:** To rename a file, use the command `rename file <old-path> to <new-path>`. Replace `<old-path>` with the current file absolute path and `<new-path>` with the desired new file absolute path.
 
 - **Add content to a file:** To add content to a file, use the command `add to file <path> this content: <content>`. Replace `<path>` with the file absolute path and `<content>` with the content you want to add.
+
+## Importance Note
+
+1.  The path must be the absolute path, which is the exact location of a file or directory in a file system. Examples: - Unix-based systems: `/home/user/documents/file.txt` - Windows systems: `C:\Users\User\Documents\file.txt`
+
+2.  Currently, You can only write one command in the `command.txt`. If you write more than one command, it will not process it. In the future, there will be an implementation of multiple command handling.
 
 ## Function Descriptions
 
